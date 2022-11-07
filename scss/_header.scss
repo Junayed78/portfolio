@@ -1,0 +1,89 @@
+#hader_area{
+
+  //Top Header style
+  .top_header_area{
+    background: $pColor;
+    padding: $paddingSm;
+    position: relative;
+    .mobile_menu{
+      display: none;
+    }
+    P{
+      font: {
+        size: 14px;
+        weight: $fontWmd;
+      }
+      color: $whiteColor;
+      margin: 8px 0;
+       i{
+      display: inline-block;
+      margin-right: 8px;
+    }
+    }
+   
+  }
+
+  //Main Header Style
+  .main_header{
+    background: $whiteColor;
+    padding: 25px 0;
+    .logo_area{
+      flex-basis: 30%;
+      padding-top: 7px;
+    }
+    .main_menu{
+      flex-basis: 70%;
+      ul{
+        text-align: right;
+        display: block;
+        justify-content: end;
+        padding-top: 11px;
+        li{
+          margin-left: 25px;
+          a{
+            color: $bkColor;
+            font: {
+              size: 16px;
+              weight:$fontWmd;
+            }
+            &:hover{
+              color: $pColor;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and(min-width: $small) and(max-width: $medim) {
+    .main_menu{
+      background: $pColor;
+      position: absolute;
+      width: 96%;
+      left: -99999px;
+     ul{
+     flex-direction: column;
+     text-align: left;
+     li{
+       display: block;
+       margin-left: 0;
+       margin-bottom: 5px;
+       &:last-child{
+         margin-bottom: 0;
+       }
+       a{
+         color: $whiteColor;
+         display: block;
+         padding: 10px 15px;
+         &:hover{
+           background: $bkColor;
+           color: $whiteColor;
+         }
+       }
+     }
+    }
+    &.open{
+      left: 10px;
+    }
+  }
+  }
+  }
+}

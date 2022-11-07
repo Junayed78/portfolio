@@ -1,0 +1,107 @@
+$derkBgcolor: #1f1f1f;
+$derkScolor: #262626;
+
+body.derk {
+  #hader_area {
+    .socila_area{
+      ul{
+        li{
+          a{
+            &:hover{
+              background: $whiteColor;
+            }
+          }
+        }
+      }
+    }
+    .top_header_area {
+      background:$derkBgcolor;
+    }
+    .main_header{
+      background: $derkScolor;
+      .main_menu ul li a{
+        color: $whiteColor;
+      }
+    }
+  }
+  #hero_area{
+    background: $derkBgcolor;
+    h2, 
+    h5, 
+    p{
+      color: $whiteColor;
+    }
+  }
+  #about_area{
+    background: $derkBgcolor;
+    h3{
+      color: $whiteColor;
+    }
+    .child_about{
+      background: $derkScolor;
+      h4, h6{
+        color: $whiteColor;
+      }
+    }
+    h6, h3, p{
+      color: $whiteColor;
+    }
+  }
+  #service_area{
+    background: $derkBgcolor;
+    .container, h4{
+      color: $whiteColor;
+    }
+    .child_service{
+      background: $derkScolor;
+      box-shadow: none;
+    }
+  }
+  #project_area{
+    background: $derkBgcolor;
+    .container.text-center{
+      color: $whiteColor;
+    }
+  }
+  #blog_area{
+    background: $derkBgcolor;
+     .container.text-center{
+      color: $whiteColor;
+    }
+    .child_blog{
+      .blog_info{
+        background: $derkScolor;
+        h4, 
+        a, 
+        p{
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  #contact_area{
+    background: $derkBgcolor;
+    .container.text-center{
+      color: $whiteColor;
+    }
+    .contact_info{
+      div{
+        background: $derkScolor;
+        p{
+          color: $whiteColor;
+        }
+      }
+    }
+    .contact_from input, textarea {
+      background: $derkScolor;
+      border-color: $derkScolor;
+      color: $whiteColor;
+    }
+    input[type="submit"]{
+      background: $pColor;;
+    }
+  }
+  #footer_area{
+    background: $derkScolor;
+  }
+}

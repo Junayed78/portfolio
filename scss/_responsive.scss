@@ -1,0 +1,272 @@
+ //laptop Responsive
+ @media only screen and (min-width:  768px)  and (max-width: 1199px){
+  #hader_area{
+    .top_header_area{
+      p{
+        font-size: 13px;
+      }
+      .inner{
+       .address{
+        flex-basis: 21%;
+       }
+       .phpne_number{
+        flex-basis: 21%;
+        i{
+          display: block;
+          padding-bottom: 10px;
+        }
+       }
+       .email_address{
+        flex-basis: 21%;
+        i{
+          display: block;
+          padding-bottom: 10px;
+        }
+       }
+       .socila_area{
+        padding-top: 13px;
+        ul{
+          li{
+            margin-left: 8px;
+          }
+        }
+       }
+      }
+    }
+    .main_header{
+      .main_menu{
+        ul{
+          padding-top: 8px;
+          li{
+            margin-left: 21px;
+          }
+        }
+      }
+    }
+   }
+   #hero_area{
+       padding-top: 30px;
+       img{
+    padding: 0 0 0 71px;
+        }
+   }
+   #about_area{
+    padding-top: 30px;
+    .about_numbers{
+      .child_about{
+        h4{
+          font-size: 35px;
+        }
+        h6{
+          font-size: 14px;
+        }
+      }
+    }
+    .about_infou{
+      h3{
+        font-size: 25px;
+      }
+    }
+   }
+   #service_area{
+    padding: 30px 0;
+    .child_service{
+      i{
+        font-size: 35px;
+      }
+      h4{
+        font-size: 18px;
+      }
+      p{
+        .btn-cta{
+          padding: 14px 22px;
+        }
+      }
+    }
+   }
+   #project_area{
+    padding: 30px 0;
+    .project_x{
+    grid-column: auto / span 1;
+  }
+  .project_y{
+    grid-row: auto / span 1;
+  }
+  .project_xy{
+    grid-column: auto / span 1;
+    grid-row: auto / span 1;
+
+  }
+   }
+   #blog_area{
+    padding: 30px 0;
+    .child_blog{
+      .blog_info{
+        h4{
+          font-size: 18px;
+        }
+      }
+    }
+   }
+   #contact_area{
+    .contact_info{
+      div{
+        padding: 20px 5px;
+        display: flex;
+      }
+    }
+   }
+ }
+ 
+ //mobile Responsive
+ @media only screen and (min-width:  $small)  and (max-width: $medim) {
+   //Header Area Style
+   #hader_area{
+     .inner{
+       display: block;
+     }
+     .top_header_area{
+       .address,
+       .phpne_number,
+       .email_address{
+         display: none;
+       }
+       .socila_area{
+         ul{
+           text-align: center;
+         }
+       }
+      .mobile_menu{
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 18px;
+      i{
+        color: $whiteColor;
+        font-size: 25px;
+        cursor: pointer;
+      }
+     }
+     }
+     .main_header{
+      .logo_area{
+        width: 200px;
+        margin: 0 auto;
+        padding: 0 0 0 26px;
+      }
+     }
+   }
+
+   // Hero Area Style
+   #hero_area{
+     padding-top: 30px;
+     .inner{
+       flex-direction: column;
+       img{
+         padding-left:0 ;
+       }
+       .hero_info{
+         flex-basis: 100%;
+         padding: 20px;
+         order: 2;
+         h2{
+           font-size: 40px;
+         }
+       }
+      .hero_image{
+        order: 1;
+       }
+     }
+   }
+
+   //About Area Style
+   #about_area{
+    .inner{
+      flex-direction: column;
+    }
+    .about_numbers{
+      flex-basis: 100%;
+      .child_about{
+        h4{
+          font-size: 25px;
+        }
+        h6{
+          font-size: 14px;
+        }
+      }
+    }
+    .about_infou{
+      flex-basis: 100%;
+      padding: 20px;
+      h3{
+        font-size: 25px;
+      }
+      h6{
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+   }
+
+  //Service Area Style
+  #service_area{
+    .inner{
+      flex-direction: column;
+    }
+    .child_service{
+      margin-bottom: 25px;
+      padding: 20px;
+      i{
+        margin-bottom: 10px; 
+      }
+      h4{
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+   }
+
+  //Project Area Style
+  #project_area{
+    .inner-grid{
+      display: block;
+      .child_project{
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  //Blog Area Style
+  #blog_area{
+    .inner{
+      flex-direction: column;
+      child_blog{
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  //Contac Area Style
+  #contact_area{
+  .inner,
+  .contact_info{
+    flex-direction: column;
+    }
+  .contact_info{
+    div{
+      padding: 10px;
+      margin-bottom: 10px;
+      }
+    }
+   }
+
+   //Contac Area Style
+   #footer_area{
+    .top{
+      bottom: 3px;
+    }
+   }
+  }

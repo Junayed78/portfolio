@@ -1,0 +1,146 @@
+// colgroup
+$pColor:#eb7966;
+$sColor:#f4c9c2;
+$bgColor:#f9ebea;
+$whiteColor:#fff;
+$bkColor:#11184f;
+
+// Font Weight
+$fontWsm: 400;
+$fontWmd: 600;
+$fontWxl: 900;
+
+// body paragarape heading
+body, p {
+  font: {
+    size: 16px;
+    weight: $fontWsm ;
+  }
+}
+p{
+  margin: 0 0 15px;
+}
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h5 {
+ font-weight: $fontWxl;
+ margin: 0 0 15px;
+ line-height: 1.2em;
+}
+
+
+//Main width
+$small: 200px;
+$medim: 767px;
+.container{
+  width: 96%;
+  margin: 0 auto;
+  @media only screen and(min-width: $small) and(max-width: $medim) {
+    width: 96%;
+  }
+}
+
+//paddings
+$paddingSm: 10px 0;
+.paddingxl{
+  padding: 60px 0;
+   @media only screen and(min-width: $small) and(max-width: $medim) {
+    padding: 25px 0;
+  }
+}
+
+//margin
+.m-top{
+  margin-top: 45px;
+  @media only screen and(min-width: $small) and(max-width: $medim) {
+    margin-top: 25px;
+  }
+}
+
+.extra_1{
+  padding-top: 25px;
+  @media only screen and(min-width: $small) and(max-width: $medim) {
+    padding-top: 0;
+  }
+}
+
+//Social Area
+   .socila_area{
+      ul{
+         text-align: right;
+         li{
+           margin-left: 15px;
+           a{
+             display: block;
+             background: $sColor;
+             width: 40px;
+             height: 40px;
+             font-size: 15px;
+             color: $bkColor;
+             text-align: center;
+             padding-top: 8px;
+             border-radius: 30px;
+             i{
+               margin: 0;
+             }
+             &:hover{
+               background: $bkColor;
+               color: $sColor;
+             }
+           }
+         }
+         i.fas{
+             display: block;
+             background: $sColor;
+             width: 40px;
+             height: 40px;
+             font-size: 15px;
+             color: $bkColor;
+             text-align: center;
+             padding-top: 12px;
+             transition: 0.3s;
+             border-radius: 30px;
+             cursor: pointer;
+             &:hover{
+               background: $whiteColor;
+               color: $sColor;
+             }
+           }
+         }
+      }
+    // Call To Action Button
+    .btn-cta{
+      background: $pColor;
+      color: $whiteColor;
+      display: inline-block;
+      padding: 12px 25px;
+      font-weight: $fontWmd;
+      border-radius: 5px;
+      margin-top: 5px;
+      &:hover{
+        background: $bkColor;
+      }
+    }
+
+  .title{
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 10px;
+    @media only screen and(min-width: $small) and(max-width: $medim) {
+    font-size: 25px;
+  }
+  }
+  .sub-title{
+    font: {
+      size: 25px;
+      weight:$fontWmd;
+    }
+    line-height: 1em;
+    margin-bottom: 0;
+    @media only screen and(min-width: $small) and(max-width: $medim) {
+    font-size: 15px;
+  }
+  }
